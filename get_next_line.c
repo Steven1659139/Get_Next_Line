@@ -20,7 +20,6 @@ static void	ft_read(int fd, char *buf, char **statique)
 	if(!*statique || !ft_strchr(*statique, '\n'))
 	{	
 		nb_bytes = read(fd, buf, BUFFER_SIZE);
-		//printf("%d", nb_bytes);
 		while (nb_bytes > 0)
 		{
 			buf[nb_bytes] = 0;
@@ -46,10 +45,8 @@ static char	*ft_retline(char **statique)
 	char	*ret;
 	char 	*tmp;
 
-//	printf("-%s-\n", *statique);
 	if (!*statique)
 	{
-//		printf("%s", *statique);
 		return (NULL);
 	}
 	len = ft_strlen(*statique);
