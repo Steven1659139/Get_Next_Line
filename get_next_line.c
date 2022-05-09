@@ -6,7 +6,7 @@
 /*   By: slavoie <slavoie@student.42quebec.>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/06 14:46:39 by slavoie           #+#    #+#             */
-/*   Updated: 2021/09/08 20:06:35 by slavoie          ###   ########.fr       */
+/*   Updated: 2022/05/09 16:10:32 by slavoie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "get_next_line.h"
@@ -98,3 +98,4 @@ char	*get_next_line(int fd)
     close(fd);
     return (0);
 }*/ 
+
